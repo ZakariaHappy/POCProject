@@ -10,7 +10,6 @@ use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
-
     public function integration()
     {
         return $this->hasOne(\App\Models\IntegrationSetting::class);

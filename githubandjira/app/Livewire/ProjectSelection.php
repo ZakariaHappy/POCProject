@@ -121,7 +121,6 @@ class ProjectSelection extends Component
             // Optioneel voor dev debugging:
             // session()->flash('error_details', $e->getMessage());
         }
-
     }
 
 
@@ -246,7 +245,6 @@ class ProjectSelection extends Component
                 session()->flash('error', 'Fout bij het aanmaken van de release branch!');
                 session()->flash('error_details', $newBranchResponse->body());
             }
-
         } catch (\Exception $e) {
             session()->flash('error', 'Er is een fout opgetreden!');
             session()->flash('error_details', $e->getMessage());
@@ -266,5 +264,4 @@ class ProjectSelection extends Component
             'githubError' => $this->githubError,
         ]);
     }
-
 }

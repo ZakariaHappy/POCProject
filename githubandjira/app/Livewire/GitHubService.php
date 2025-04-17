@@ -72,7 +72,9 @@ class GitHubService
 
             if ($response->successful()) {
                 $branches = $response->json();
-                if (empty($branches)) break;
+                if (empty($branches)) {
+                    break;
+                }
 
                 $allBranches = array_merge($allBranches, $branches);
                 $page++;

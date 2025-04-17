@@ -93,7 +93,9 @@ class JiraService
 
                 if ($linkedKey) {
                     $linked = $this->fetchIssueByKey($linkedKey);
-                    if ($linked) $extraIssues[] = $linked;
+                    if ($linked) {
+                        $extraIssues[] = $linked;
+                    }
                 }
             }
 
@@ -125,5 +127,4 @@ class JiraService
 
         return $response->successful() ? $response->json()['issues'] : [];
     }
-
 }

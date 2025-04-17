@@ -56,7 +56,6 @@ class UserIntegrationSettings extends Component
 
         session()->flash('message', 'Integratie-instellingen succesvol opgeslagen!');
         $this->dispatch('integration-saved');
-
     }
 
     public function render()

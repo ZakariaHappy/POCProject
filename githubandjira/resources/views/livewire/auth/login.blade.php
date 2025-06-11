@@ -48,8 +48,4 @@
             <flux:link :href="route('register')" wire:navigate>{{ __('Sign up') }}</flux:link>
         </div>
     @endif
-
-    <div class="bg-blue-500 text-white p-4 rounded-xl">
-        Als je dit blauw ziet, werkt Tailwind! 🎉
-    </div>
 </div>

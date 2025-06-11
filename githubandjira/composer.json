@@ -13,13 +13,14 @@
         "laravel/framework": "^12.0",
         "laravel/socialite": "^5.18",
         "laravel/tinker": "^2.10.1",
-        "livewire/flux": "^2.0",
+        "livewire/flux": "^2.1",
         "socialiteproviders/atlassian": "^4.0",
         "socialiteproviders/jira": "^5.0",
         "socialiteproviders/manager": "*"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",
+        "laravel/dusk": "^8.3",
         "laravel/pail": "^1.2.2",
         "laravel/pint": "^1.18",
         "laravel/sail": "^1.41",

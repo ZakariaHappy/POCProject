@@ -17,9 +17,4 @@ class MergeProposalCreated extends Mailable
     {
         $this->pullRequestUrls = $pullRequestUrls;
     }
-
-    public function build()
-    {
-        return $this->subject('Nieuwe Mergevoorstellen Aangemaakt')->view('emails.merge_proposals');
-    }
 }

@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -10,11 +9,6 @@ use Illuminate\Support\Str;
 
 class User extends Authenticatable
 {
-    public function integration()
-    {
-        return $this->hasOne(\App\Models\IntegrationSetting::class);
-    }
-
     /** @use HasFactory<\Database\Factories\UserFactory> */
     use HasFactory;
     use Notifiable;
@@ -29,6 +23,11 @@ class User extends Authenticatable
         'email',
         'password',
     ];
+
+    public function integration()
+    {
+        return $this->hasOne(\App\Models\IntegrationSetting::class);
+    }
 
     /**
      * The attributes that should be hidden for serialization.

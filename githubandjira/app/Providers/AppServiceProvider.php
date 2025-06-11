@@ -2,9 +2,9 @@
 
 namespace App\Providers;
 
+use App\Models\Issue;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Socialite\Facades\Socialite;
-use App\Providers\JiraSocialiteProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -21,10 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Socialite::extend('jira-oauth', function ($app) {
-            $config = $app['config']['services.jira'];
-
-            return Socialite::buildProvider(JiraSocialiteProvider::class, $config);
-        });
+        //
     }
 }

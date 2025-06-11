@@ -15,12 +15,12 @@ return new class extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained()->onDelete('cascade');
 
-            // GitHub
+            // Repository
             $table->string('github_token')->nullable();
             $table->string('github_username')->nullable();
             $table->string('github_repo')->nullable();
 
-            // Jira
+            // Issue
             $table->string('jira_email')->nullable();
             $table->string('jira_token')->nullable();
             $table->string('jira_domain')->nullable();

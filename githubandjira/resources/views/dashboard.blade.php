@@ -12,26 +12,39 @@
     <aside class="w-64 bg-white border-r p-6 space-y-6 shadow">
         <h2 class="text-2xl font-bold text-blue-600">Happy Releasing</h2>
         <nav class="flex flex-col space-y-4">
-            <button onclick="showSection('project')" class="px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600 transition">Projectselectie</button>
-            <button onclick="showSection('integrations')" class="px-4 py-2 rounded bg-red-500 text-white hover:bg-red-600 transition">Integratie Instellingen</button>
+            <a href="{{ route('release') }}" class="px-4 py-2 rounded bg-blue-500 text-white hover:bg-blue-600 transition" dusk="sidebar-release">Release Workflow</a>
+            <a href="{{ route('integration') }}" class="px-4 py-2 rounded bg-red-500 text-white hover:bg-red-600 transition">Integratie Instellingen</a>
+            <form method="POST" action="{{ route('logout') }}">
+                @csrf
+                <button type="submit" class="px-4 py-2 rounded bg-gray-200 hover:bg-gray-300 text-gray-700 text-left w-full">Log uit</button>
+            </form>
         </nav>
+
     </aside>
 
+
+
     <!-- Main content -->
-    <main class="flex-1 p-10">
-        <div id="welcome-section">
-            <h1 class="text-3xl font-bold mb-6">Welkom bij de GitHub & Jira Tool</h1>
-            <p class="text-gray-700 text-lg">Gebruik de navigatie aan de linkerkant om te starten met een project of om je integratiegegevens te beheren.</p>
-        </div>
+{{--    <main class="flex-1 p-10">--}}
+{{--        <div id="welcome-section">--}}
+{{--            <h1 class="text-3xl font-bold mb-6">Welkom bij de GitHub & Jira Tool</h1>--}}
+{{--            <p class="text-gray-700 text-lg">Gebruik de navigatie aan de linkerkant om te starten met een project of om je integratiegegevens te beheren.</p>--}}
+{{--        </div>--}}
 
-        <div id="project-section" class="hidden">
-            @livewire('project-selection')
-        </div>
+{{--        <div id="project-section" class="hidden">--}}
+{{--            @livewire('release-workflow-component')--}}
+{{--        </div>--}}
 
-        <div id="integrations-section" class="hidden">
-            @livewire('settings.user-integration-settings')
-        </div>
-    </main>
+{{--        <div id="integrations-section" class="hidden">--}}
+{{--            @livewire('settings.integration-settings')--}}
+{{--        </div>--}}
+
+
+
+{{--    </main>--}}
+
+
+
 </div>
 
 <script>

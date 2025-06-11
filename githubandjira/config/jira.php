@@ -1,8 +1,8 @@
 <?php
 
-/**return [
-        'email' => env('JIRA_EMAIL'),
-        'token' => env('JIRA_TOKEN'),
-        'url' => env('JIRA_BASE_URL'),
-];*/
+return [
+    'base_url' => env('JIRA_API_BASE'),
+    'jira_email' => env('JIRA_API_EMAIL'),
+    'jira_token' => env('JIRA_API_TOKEN'),
+];
 

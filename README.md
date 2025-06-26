@@ -9,11 +9,11 @@ Deze applicatie is bedoeld voor developers, releasers en projectleiders die werk
 
 1. Log in met je account of maak een account aan.
 2. Stel integraties in via integratie instellingen:
-  - Organisatienaam (GitHub)
-  - GitHub-token
-  - Jira e-mailadres
-  - Jira-token
-  - Jira-domein
+    - Organisatienaam (GitHub)
+    - GitHub-token
+    - Jira e-mailadres
+    - Jira-token
+    - Jira-domein
 
 Sla je instellingen op.
 Je tokens worden veilig bewaard.

@@ -15,3 +15,9 @@ Deze applicatie is bedoeld voor developers, releasers en projectleiders die werk
 
 Sla je instellingen op.
 Je tokens worden veilig bewaard.
+
+
+## 2. Selecteer een Jira-project en release
+1. Voer de projectkey in (bijv. PROJ).
+2. Selecteer de gewenste release (fixVersion).
+3. De tool haalt nu automatisch alle bijbehorende Jira-issues op.
